@@ -29,7 +29,7 @@ Only **30 annotated video frames** were available for the entire dataset.
 | Train | 24 |
 | Validation | 4 |
 | Test | 2 |
-| Classes | 1 (`Clamp`) |
+| Classes | 1 (`Clamp`) | 
 
 Preprocessing was limited to **Auto-Orient**, while augmentation was disabled for this dataset version.
 
