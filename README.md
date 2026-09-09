@@ -14,21 +14,26 @@ The target was not only to detect clamps, but to keep their displayed identities
 - a frame-level detection-count error percentage
 - logical clamp IDs from `1` to `14`
 
+## Key Challenge
+
+The project was developed under a strict constraint of only **30 annotated frames extracted from the original video**.
+
+No image editing or synthetic data augmentation was used to artificially expand or modify the dataset. Despite this limited data, the system had to detect small, closely spaced clamps under challenging reflections while maintaining stable logical IDs for all 14 clamps throughout circular motion.
+
 ## Dataset
 
-Only **30 source images** were used.
+Only **30 annotated video frames** were available for the entire dataset.
 
-| Split | Images |
+| Split | Frames |
 |---|---:|
 | Train | 24 |
 | Validation | 4 |
 | Test | 2 |
 | Classes | 1 (`Clamp`) |
 
-Preprocessing used **Auto-Orient** and augmentation was disabled for this dataset version.
+Preprocessing was limited to **Auto-Orient**, while augmentation was disabled for this dataset version.
 
-> **Dataset note:** the source dataset is private and is intentionally not included in this public repository.
-
+> **Dataset note:** The source dataset is private and is intentionally not included in this public repository.
 ## Detector
 
 **Model:** YOLO11m  
