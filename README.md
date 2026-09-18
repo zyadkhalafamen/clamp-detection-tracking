@@ -1,5 +1,12 @@
 # Clamp Detection & Stable Circular Tracking
 
+![Python](https://img.shields.io/badge/Language-Python-3776AB?style=flat-square)
+![Detector](https://img.shields.io/badge/Detector-YOLO11m-00FFFF?style=flat-square)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV-5C3EE8?style=flat-square)
+![Tracker](https://img.shields.io/badge/Tracker-BoT--SORT-orange?style=flat-square)
+![Objects](https://img.shields.io/badge/Tracked%20Objects-14-blue?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
+
 A computer-vision pipeline for detecting **14 clamps** on a circular moving system and assigning persistent logical IDs **1–14**.
 
 The project uses **YOLO11m** for detection, **BoT-SORT** for temporal tracking, and a custom geometry-aware ID layer based on a **circular motion model**, **Hungarian assignment**, **angular gating**, and **motion prediction**.
@@ -29,11 +36,12 @@ Only **30 annotated video frames** were available for the entire dataset.
 | Train | 24 |
 | Validation | 4 |
 | Test | 2 |
-| Classes | 1 (`Clamp`) | 
+| Classes | 1 (`Clamp`) |
 
 Preprocessing was limited to **Auto-Orient**, while augmentation was disabled for this dataset version.
 
 > **Dataset note:** The source dataset is private and is intentionally not included in this public repository.
+
 ## Detector
 
 **Model:** YOLO11m  
